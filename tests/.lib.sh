@@ -85,3 +85,10 @@ function run_fail() {
 		return 1
 	fi
 }
+
+###
+### Compare version
+###
+function ver() {
+  printf "%02d%02d%02d" $(echo "$1" | tr '.' ' ');
+}

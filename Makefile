@@ -24,9 +24,10 @@ include $(MAKEFILES)
 TAG        = latest
 
 # Makefile.docker overwrites
+DOCKER_USER       = johnea
 # NAME    = no default
 # VERSION = no default
-IMAGE    = devilbox/mysql
+IMAGE    = $(DOCKER_USER)/mysql
 DIR      = Dockerfiles
 FILE     = $(NAME)-$(VERSION)
 TAG      = latest
@@ -101,4 +102,4 @@ endif
 	@echo "################################################################################"
 	@echo "# Testing $(IMAGE):$(DOCKER_TAG) $(ARCH)"
 	@echo "################################################################################"
-	./tests/tests.sh "$(NAME)" "$(VERSION)" "${DOCKER_TAG}" "$(ARCH)"
+	./tests/tests.sh "$(NAME)" "$(VERSION)" "${DOCKER_TAG}" "$(ARCH)" "$(DOCKER_USER)"

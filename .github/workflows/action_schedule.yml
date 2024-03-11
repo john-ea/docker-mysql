@@ -3,7 +3,7 @@
 # -------------------------------------------------------------------------------------------------
 # Job Name
 # -------------------------------------------------------------------------------------------------
-name: nightly
+name: 🕛 Nightly
 
 
 # -------------------------------------------------------------------------------------------------
@@ -12,7 +12,7 @@ name: nightly
 on:
   # Runs daily
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 0 * * 0'
 
 
 jobs:
@@ -24,7 +24,7 @@ jobs:
   # (2/2) Build
   docker:
     needs: [params]
-    uses: devilbox/github-actions/.github/workflows/docker-name-version-arch.yml@master
+    uses: ./.github/workflows/docker-name-version-arch.yml
     with:
       enabled: true
       can_deploy: true
