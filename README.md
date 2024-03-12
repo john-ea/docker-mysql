@@ -1,7 +1,7 @@
 # MySQL Docker images
 
-[![Nightly](https://img.shields.io/github/actions/workflow/status/john-ea/docker-mysql/action_schedule.yml?style=for-the-badge&logo=github&event=schedule&label=Nightly)](https://github.com/john-ea/docker-mysql/actions?query=workflow%3Anightly)
-[![Nightly](https://img.shields.io/github/actions/workflow/status/john-ea/docker-mysql/action_branch.yml?style=for-the-badge&logo=github&event=push&label=Build)](https://github.com/john-ea/docker-mysql/actions?query=workflow%3Anightly)
+[![Nightly](https://img.shields.io/github/actions/workflow/status/john-ea/docker-mysql/action_schedule.yml?style=for-the-badge&logo=github&event=schedule&label=Nightly)](https://github.com/john-ea/docker-mysql/actions/workflows/action_schedule.yml?query=workflow%3Abuild)
+[![Build](https://img.shields.io/github/actions/workflow/status/john-ea/docker-mysql/action_branch.yml?style=for-the-badge&logo=github&event=push&label=Build)](https://github.com/john-ea/docker-mysql/actions/workflows/action_branch.yml?query=workflow%3Abuild)
 [![Docker pulls](https://img.shields.io/docker/pulls/johnea/mysql.svg?style=for-the-badge&logo=docker)](https://hub.docker.com/r/johnea/mysql/tags)
 
 [![Tag](https://img.shields.io/github/tag/devilbox/docker-mysql.svg)](https://github.com/devilbox/docker-mysql/releases)
@@ -177,7 +177,7 @@ The below listed tables show how the official images have been retagged.
 |------------------------|--------------------------------|---------------------|
 | `mariadb:5.5`          | `johnea/mysql:mariadb-5.5`   | `amd64`             |
 | `mariadb:10.0`         | `johnea/mysql:mariadb-10.0`  | `amd64`             |
-| `mariadb:10.1`         | `johnea/mysql:mariadb-10.1`  | `amd64`, `arm64`    |
+| `mariadb:10.1`         | `johnea/mysql:mariadb-10.1`  | `amd64`             |
 | `mariadb:10.2`         | `johnea/mysql:mariadb-10.2`  | `amd64`, `arm64`    |
 | `mariadb:10.3`         | `johnea/mysql:mariadb-10.3`  | `amd64`, `arm64`    |
 | `mariadb:10.4`         | `johnea/mysql:mariadb-10.4`  | `amd64`, `arm64`    |
