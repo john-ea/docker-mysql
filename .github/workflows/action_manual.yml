@@ -33,13 +33,10 @@ on:
         default: '"8.0"'
         type: string
       arch:
-        description: 'Arch platform'
+        description: 'Comma separated list of Arch platform (example: "linux/amd64", "linux/arm64")'
         required: true
-        default: 'linux/amd64'
-        type: choice
-        options:
-          - 'linux/amd64'
-          - 'linux/arm64'
+        default: '"linux/amd64", "linux/arm64"'
+        type: string
       default_branch:
         description: 'The default branch of this repository to fetch latest tags from. Default: my-image'
         required: false
@@ -80,7 +77,7 @@ env:
       {
         "NAME":    ${{ format('"{0}"', inputs.name) }},
         "VERSION": ${{ format('[{0}]', inputs.version) }},
-        "ARCH":    ${{ format('["{0}"]', inputs.arch) }}
+        "ARCH":    ${{ format('[{0}]', inputs.arch) }}
       }
     ]
 
