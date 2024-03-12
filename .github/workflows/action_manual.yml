@@ -10,6 +10,7 @@ name: 🤞 Manual Build
 # When to run
 # -------------------------------------------------------------------------------------------------
 on:
+  # Dispatch: allows for manual trigger via GH UI
   workflow_dispatch:
     inputs:
       name:

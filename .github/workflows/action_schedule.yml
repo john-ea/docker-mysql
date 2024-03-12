@@ -10,9 +10,11 @@ name: 🕛 Nightly
 # When to run
 # -------------------------------------------------------------------------------------------------
 on:
-  # Runs daily
+  # Runs weekly
   schedule:
     - cron: '0 0 * * 0'
+  # Dispatch: allows for manual trigger via GH UI
+  workflow_dispatch:
 
 
 jobs:

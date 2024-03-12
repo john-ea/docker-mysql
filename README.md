@@ -139,13 +139,13 @@ The mountpoints for configuration files have been streamlined for all images in 
 
 ## ∢ Build
 
-Build MySQL 5.5 Docker image locally
+Build MySQL 8.0 Docker image locally
 ```bash
-make build NAME=mysql VERSION=5.5
+make build NAME=mysql VERSION=8.0
 ```
-Build MariaDB 10.10 Docker image for `arm64` locally
+Build MariaDB 10.11 Docker image for `arm64` locally
 ```bash
-make build NAME=mariadb VERSION=10.10 ARCH=linux/arm64
+make build NAME=mariadb VERSION=10.11 ARCH=linux/arm64
 ```
 
 

@@ -10,6 +10,8 @@ name: 🏠 Build
 # When to run
 # -------------------------------------------------------------------------------------------------
 on:
+  # Dispatch: allows for manual trigger via GH UI
+  workflow_dispatch:
   push:
     paths:
       - '.github/workflows/action_branch.yml'
