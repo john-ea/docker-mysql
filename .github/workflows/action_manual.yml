@@ -13,6 +13,11 @@ on:
   # Dispatch: allows for manual trigger via GH UI
   workflow_dispatch:
     inputs:
+      run-name:
+        description: 'Name of workflow'
+        required: true
+        default: '🤞 Manual Build'
+        type: string
       name:
         description: 'Name'
         required: true
@@ -23,9 +28,9 @@ on:
           - 'mariadb'
           - 'percona'
       version:
-        description: 'Version (example: 8.0)'
+        description: 'Comma separated list of version (example: "8.0", "8.1")'
         required: true
-        default: '8.0'
+        default: '"8.0"'
         type: string
       arch:
         description: 'Arch platform'
@@ -74,10 +79,15 @@ env:
     [
       {
         "NAME":    ${{ format('"{0}"', inputs.name) }},
-        "VERSION": ${{ format('["{0}"]', inputs.version) }},
+        "VERSION": ${{ format('[{0}]', inputs.version) }},
         "ARCH":    ${{ format('["{0}"]', inputs.arch) }}
       }
     ]
+
+# -------------------------------------------------------------------------------------------------
+# Custom name of workflow
+# -------------------------------------------------------------------------------------------------
+run-name: ${{ inputs.run-name }} 🚀
 
 
 jobs:
