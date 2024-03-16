@@ -115,7 +115,7 @@ jobs:
   docker:
     name: Build Image
     needs: [params]
-    uses: ./.github/workflows/docker-name-version-arch.yml
+    uses: john-ea/devilbox-actions/.github/workflows/docker-name-version-arch.yml@master
     with:
       enabled: ${{ inputs.enabled }}
       can_deploy: ${{ inputs.deploy }}

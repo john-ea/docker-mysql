@@ -1,7 +1,7 @@
 # MySQL Docker images
 
-[![Nightly](https://img.shields.io/github/actions/workflow/status/john-ea/docker-mysql/action_schedule.yml?style=for-the-badge&logo=github&event=schedule&label=Nightly)](https://github.com/john-ea/docker-mysql/actions/workflows/action_schedule.yml?query=workflow%3Abuild)
-[![Build](https://img.shields.io/github/actions/workflow/status/john-ea/docker-mysql/action_branch.yml?style=for-the-badge&logo=github&event=push&label=Build)](https://github.com/john-ea/docker-mysql/actions/workflows/action_branch.yml?query=workflow%3Abuild)
+[![Nightly](https://img.shields.io/github/actions/workflow/status/john-ea/docker-mysql/action_schedule.yml?style=for-the-badge&logo=github&event=schedule&label=Nightly)](https://github.com/john-ea/docker-mysql/actions/workflows/action_schedule.yml)
+[![Build](https://img.shields.io/github/actions/workflow/status/john-ea/docker-mysql/action_branch.yml?style=for-the-badge&logo=github&event=push&label=Build)](https://github.com/john-ea/docker-mysql/actions/workflows/action_branch.yml)
 [![Docker pulls](https://img.shields.io/docker/pulls/johnea/mysql.svg?style=for-the-badge&logo=docker)](https://hub.docker.com/r/johnea/mysql/tags)
 
 [![Tag](https://img.shields.io/github/tag/devilbox/docker-mysql.svg)](https://github.com/devilbox/docker-mysql/releases)
@@ -320,3 +320,5 @@ Ansible: [cytopia](https://galaxy.ansible.com/cytopia)
 **[MIT License](LICENSE)**
 
 Copyright (c) 2019 [cytopia](https://github.com/cytopia)
+
+Thanks to [cytopia](https://github.com/cytopia) and the [devilbox](https://github.com/devilbox) project. 
