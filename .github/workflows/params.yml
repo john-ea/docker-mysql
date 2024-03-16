@@ -83,7 +83,7 @@ jobs:
 
       - name: "[Set-Output] Matrix 'Refs' (master branch and latest tag)"
         id: set-refs
-        uses: john-ea/devilbox-actions/.github/workflows/git-ref-matrix-action@master
+        uses: john-ea/devilbox-actions/.github/actions/git-ref-matrix-action@master
         with:
           repository_default_branch: ${{ inputs.default_branch }}
           branches: ${{ inputs.branches }}
