@@ -4,12 +4,16 @@
 [![Build](https://img.shields.io/github/actions/workflow/status/john-ea/docker-mysql/action_branch.yml?style=for-the-badge&logo=github&event=push&label=Build)](https://github.com/john-ea/docker-mysql/actions/workflows/action_branch.yml)
 [![Docker pulls](https://img.shields.io/docker/pulls/johnea/mysql.svg?style=for-the-badge&logo=docker)](https://hub.docker.com/r/johnea/mysql/tags)
 
-[![Tag](https://img.shields.io/github/tag/devilbox/docker-mysql.svg)](https://github.com/devilbox/docker-mysql/releases)
-[![](https://img.shields.io/badge/github-devilbox%2Fdocker--mysql-red.svg)](https://github.com/devilbox/docker-mysql "github.com/devilbox/docker-mysql")
-[![lint](https://github.com/devilbox/docker-mysql/workflows/lint/badge.svg)](https://github.com/devilbox/docker-mysql/actions?query=workflow%3Alint)
-[![build](https://github.com/devilbox/docker-mysql/workflows/build/badge.svg)](https://github.com/devilbox/docker-mysql/actions?query=workflow%3Abuild)
-[![nightly](https://github.com/devilbox/docker-mysql/workflows/nightly/badge.svg)](https://github.com/devilbox/docker-mysql/actions?query=workflow%3Anightly)
-[![License](https://img.shields.io/badge/license-MIT-%233DA639.svg)](https://opensource.org/licenses/MIT)
+![MySQL](https://img.shields.io/badge/MySQL-5.5--8.3-blue?style=for-the-badge&logo=mysql&logoColor=white)
+![MariaDB](https://img.shields.io/badge/MariaDB-5.5--11.3-blue?style=for-the-badge&logo=MariaDB&logoColor=white)
+![Percona](https://img.shields.io/badge/Percona-5.5--8.0-blue?style=for-the-badge)
+
+___
+
+The original MySQL Docker images was created and maintained by [cytopia](https://github.com/cytopia) in the [devilbox/docker-mysql](https://github.com/devilbox/docker-mysql) repository.
+
+Thanks to [cytopia](https://github.com/cytopia) and the [devilbox](https://github.com/devilbox) project.
+___
 
 [![Discord](https://img.shields.io/discord/1051541389256704091?color=8c9eff&label=Discord&logo=discord)](https://discord.gg/2wP3V6kBj4)
 [![Discourse](https://img.shields.io/discourse/https/devilbox.discourse.group/status.svg?colorB=%234CB697&label=Discourse&logo=discourse)](https://devilbox.discourse.group)
@@ -320,5 +324,3 @@ Ansible: [cytopia](https://galaxy.ansible.com/cytopia)
 **[MIT License](LICENSE)**
 
 Copyright (c) 2019 [cytopia](https://github.com/cytopia)
-
-Thanks to [cytopia](https://github.com/cytopia) and the [devilbox](https://github.com/devilbox) project. 

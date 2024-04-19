@@ -3,7 +3,7 @@
 # -------------------------------------------------------------------------------------------------
 # Job Name
 # -------------------------------------------------------------------------------------------------
-name: 🕛 Nightly
+name: 🕛 Nightly End-of-life (EOL)
 
 
 # -------------------------------------------------------------------------------------------------
@@ -12,7 +12,7 @@ name: 🕛 Nightly
 on:
   # Runs weekly
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 0 1 * *'
   # Dispatch: allows for manual trigger via GH UI
   workflow_dispatch:
 
@@ -21,7 +21,7 @@ jobs:
 
   # (1/2) Determine repository params
   params:
-    uses: ./.github/workflows/params.yml
+    uses: ./.github/workflows/params_eol.yml
 
   # (2/2) Build
   docker:
