@@ -17,7 +17,7 @@ for f in $( find "${SCRIPTPATH}" -name \*.sh | grep -E '[0-9]+' | sort -u ); do
 	echo "# --------------------------------------------------------------------------------------------------"
 	echo "# $( basename "${f}" )"
 	echo "# --------------------------------------------------------------------------------------------------"
-	if ! ${f} "${NAME}" "${VERSION}" "${TAG}" "${ARCH}" ${DOCKER_USER}; then
+	if ! ${f} "${NAME}" "${VERSION}" "${TAG}" "${ARCH}" "${DOCKER_USER}"; then
 		exit 1
 	fi
 	echo
