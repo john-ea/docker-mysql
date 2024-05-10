@@ -4,7 +4,7 @@
 [![Build](https://img.shields.io/github/actions/workflow/status/john-ea/docker-mysql/action_branch.yml?style=for-the-badge&logo=github&event=push&label=Build)](https://github.com/john-ea/docker-mysql/actions/workflows/action_branch.yml)
 [![Docker pulls](https://img.shields.io/docker/pulls/johnea/mysql.svg?style=for-the-badge&logo=docker)](https://hub.docker.com/r/johnea/mysql/tags)
 
-![MySQL](https://img.shields.io/badge/MySQL-5.5--8.3-blue?style=for-the-badge&logo=mysql&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-5.5--8.4-blue?style=for-the-badge&logo=mysql&logoColor=white)
 ![MariaDB](https://img.shields.io/badge/MariaDB-5.5--11.3-blue?style=for-the-badge&logo=MariaDB&logoColor=white)
 ![Percona](https://img.shields.io/badge/Percona-5.5--8.0-blue?style=for-the-badge)
 
@@ -47,6 +47,7 @@ The purpose of this project is to streamline and re-tag the official Docker imag
 [`mysql-8.1`][tag_mysql-8.1]
 [`mysql-8.2`][tag_mysql-8.2]
 [`mysql-8.3`][tag_mysql-8.3]
+[`mysql-8.4`][tag_mysql-8.4]
 
 [`mariadb-5.5`][tag_mariadb-5.5]
 [`mariadb-10.0`][tag_mariadb-10.0]
@@ -79,6 +80,7 @@ The purpose of this project is to streamline and re-tag the official Docker imag
 [tag_mysql-8.1]: https://github.com/john-ea/docker-mysql/blob/my-image/Dockerfiles/mysql-8.1
 [tag_mysql-8.2]: https://github.com/john-ea/docker-mysql/blob/my-image/Dockerfiles/mysql-8.2
 [tag_mysql-8.3]: https://github.com/john-ea/docker-mysql/blob/my-image/Dockerfiles/mysql-8.3
+[tag_mysql-8.4]: https://github.com/john-ea/docker-mysql/blob/my-image/Dockerfiles/mysql-8.4
 
 [tag_percona-5.5]: https://github.com/john-ea/docker-mysql/blob/my-image/Dockerfiles/percona-5.5
 [tag_percona-5.6]: https://github.com/john-ea/docker-mysql/blob/my-image/Dockerfiles/percona-5.6
@@ -171,6 +173,7 @@ The below listed tables show how the official images have been retagged.
 | `mysql:8.1`            | `johnea/mysql:mysql-8.1` | `amd64`, `arm64`    |
 | `mysql:8.2`            | `johnea/mysql:mysql-8.2` | `amd64`, `arm64`    |
 | `mysql:8.3`            | `johnea/mysql:mysql-8.3` | `amd64`, `arm64`    |
+| `mysql:8.4`            | `johnea/mysql:mysql-8.4` | `amd64`, `arm64`    |
 
 #### MariaDB
 

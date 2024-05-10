@@ -23,7 +23,7 @@ echo "[mysqld]" > "${CNF_DIR}/config.cnf"
 echo "${CNF_KEY} = ${CNF_VAL}" >> "${CNF_DIR}/config.cnf"
 DB="mysql"
 
-if [ "${NAME}" = "mariadb" ] && [ $(ver ${VERSION}) -ge $(ver "11") ]; then
+if [ "${NAME}" = "mariadb" ] && [ "$(ver "${VERSION}")" -ge "$(ver "11")" ]; then
   DB="mariadb"
 fi
 
@@ -33,7 +33,7 @@ run "docker run -d --rm --platform ${ARCH} $(tty -s && echo "-it" || echo) --hos
 # Test MySQL connectivity
 max=100
 i=0
-while ! run "docker exec $(tty -s && echo "-it" || echo) devilbox-test-mysql ${DB} -uroot --password='' -h 127.0.0.1 -e \"SHOW VARIABLES LIKE '%${CNF_KEY}%';\" | grep '${CNF_VAL}'"; do
+while ! run "docker exec $(tty -s && echo "-it" || echo) devilbox-test-mysql ${DB} -uroot --password='' -h 127.0.0.1 -e \"SHOW VARIABLES LIKE '%%${CNF_KEY}%%';\" | grep '${CNF_VAL}'"; do
 	sleep 1
 	i=$(( i + 1))
 	if [ "${i}" -ge "${max}" ]; then
