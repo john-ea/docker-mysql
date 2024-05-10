@@ -23,7 +23,7 @@ echo "[mysqld]" > "${CNF_DIR}/config.cnf"
 echo "${CNF_KEY} = ${CNF_VAL}" >> "${CNF_DIR}/config.cnf"
 DB="mysql"
 
-if [ "${NAME}" = "mariadb" ] && [ $(ver "${VERSION}") -ge $(ver "11") ]; then
+if [ "${NAME}" = "mariadb" ] && [ "$(ver "${VERSION}")" -ge "$(ver "11")" ]; then
   DB="mariadb"
 fi
 
