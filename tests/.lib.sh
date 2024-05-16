@@ -90,5 +90,6 @@ function run_fail() {
 ### Compare version
 ###
 function ver() {
-  printf "%02d%02d%02d" "$$(echo "$$1" | tr '.' ' ')";
+  IFS='.' read -r major minor patch <<< "${1}"
+  printf "%02d%02d%02d" "$major" "$minor" "$patch"
 }
