@@ -14,6 +14,62 @@ env:
     [
       {
         "NAME":    "mysql",
+        "VERSION": ["5.5", "5.6", "5.7"],
+        "ARCH":    ["linux/amd64"]
+      },
+      {
+        "NAME":    "mysql",
+        "VERSION": ["8.0", "8.1", "8.2", "8.3", "8.4"],
+        "ARCH":    ["linux/amd64", "linux/arm64"]
+      },
+      {
+        "NAME":    "mariadb",
+        "VERSION": ["5.5", "10.0"],
+        "ARCH":    ["linux/amd64"]
+      },
+      {
+        "NAME":    "mariadb",
+        "VERSION": ["10.1", "10.2", "10.3", "10.4", "10.5", "10.6", "10.7", "10.8", "10.9", "10.10", "11.0", "11.1", "11.2", "11.3"],
+        "ARCH":    ["linux/amd64", "linux/arm64"]
+      },
+      {
+        "NAME":    "percona",
+        "VERSION": ["5.5", "5.6", "5.7", "8.0"],
+        "ARCH":    ["linux/amd64"]
+      }
+    ]
+  MATRIX_EOL: >-
+    [
+      {
+        "NAME":    "mysql",
+        "VERSION": ["5.5", "5.6", "5.7"],
+        "ARCH":    ["linux/amd64"]
+      },
+      {
+        "NAME":    "mysql",
+        "VERSION": ["8.1"],
+        "ARCH":    ["linux/amd64", "linux/arm64"]
+      },
+      {
+         "NAME":    "mariadb",
+         "VERSION": ["5.5", "10.0", "10.1"],
+         "ARCH":    ["linux/amd64"]
+      },
+      {
+        "NAME":    "mariadb",
+        "VERSION": ["10.2", "10.3", "10.7", "10.8", "10.9", "10.10"],
+        "ARCH":    ["linux/amd64", "linux/arm64"]
+      },
+      {
+        "NAME":    "percona",
+        "VERSION": ["5.5", "5.6"],
+        "ARCH":    ["linux/amd64"]
+      }
+    ]
+  MATRIX_SL: >-
+    [
+      {
+        "NAME":    "mysql",
         "VERSION": ["8.0", "8.2", "8.3", "8.4"],
         "ARCH":    ["linux/amd64", "linux/arm64"]
       },
@@ -77,7 +133,7 @@ jobs:
       - name: "[Set-Output] Matrix"
         id: set-matrix
         env:
-          MATRIX: ${{ inputs.matrix || env.MATRIX }}
+          MATRIX: ${{ inputs.matrix || (github.event_name == 'schedule' && github.event.schedule != '0 0 * * *' && env.MATRIX_EOL) || (github.event_name == 'schedule' && github.event.schedule != '0 2 * * 7' && env.MATRIX_SL) || env.MATRIX }}
         run: |
           echo "matrix=$( echo '${{ env.MATRIX }}' | jq -M -c )" >> $GITHUB_OUTPUT
 
