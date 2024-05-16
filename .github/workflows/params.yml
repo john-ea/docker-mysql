@@ -133,7 +133,7 @@ jobs:
       - name: "[Set-Output] Matrix"
         id: set-matrix
         env:
-          MATRIX: ${{ inputs.matrix || (github.event_name == 'schedule' && github.event.schedule != '0 0 * * *' && env.MATRIX_EOL) || (github.event_name == 'schedule' && github.event.schedule != '0 2 * * 7' && env.MATRIX_SL) || env.MATRIX }}
+          MATRIX: ${{ inputs.matrix || (github.event_name == 'schedule' && github.event.schedule != '0 0 * * *' && env.MATRIX_EOL) || (github.event_name == 'schedule' && github.event.schedule != '0 2 * * 0' && env.MATRIX_SL) || env.MATRIX }}
         run: |
           echo "matrix=$( echo '${{ env.MATRIX }}' | jq -M -c )" >> $GITHUB_OUTPUT
 
