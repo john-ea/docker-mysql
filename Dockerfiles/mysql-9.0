@@ -1,5 +1,5 @@
 # vi: ft=dockerfile
-FROM mysql:8.4-oracle
+FROM mysql:9.0-oracle
 
 RUN set -eux \
 # Set Additional config directories
@@ -8,16 +8,6 @@ RUN set -eux \
 		echo '!'"includedir /etc/mysql/docker-default.d/" >> /etc/my.cnf; \
 	elif [ -f /etc/mysql/my.cnf ]; then \
 		echo '!'"includedir /etc/mysql/docker-default.d/" >> /etc/mysql/my.cnf; \
-	else \
-		echo "/etc/my.cnf and /etc/mysql/my.cnf are not available"; \
-		false; \
-	fi \
-	\
-# Allow native password handling for MySQL 8.4
-	&& if [ -f /etc/my.cnf ]; then \
-		sed -i'' 's/^\[mysqld\]/[mysqld]\nmysql_native_password=ON/g' /etc/my.cnf; \
-	elif [ -f /etc/mysql/my.cnf ]; then \
-		sed -i'' 's/^\[mysqld\]/[mysqld]\nmysql_native_password=ON/g' /etc/mysql/my.cnf; \
 	else \
 		echo "/etc/my.cnf and /etc/mysql/my.cnf are not available"; \
 		false; \
