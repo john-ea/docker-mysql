@@ -5,7 +5,7 @@
 [![Docker pulls](https://img.shields.io/docker/pulls/johnea/mysql.svg?style=for-the-badge&logo=docker)](https://hub.docker.com/r/johnea/mysql/tags)
 
 ![MySQL](https://img.shields.io/badge/MySQL-5.5--8.4-blue?style=for-the-badge&logo=mysql&logoColor=white)
-![MariaDB](https://img.shields.io/badge/MariaDB-5.5--11.3-blue?style=for-the-badge&logo=MariaDB&logoColor=white)
+![MariaDB](https://img.shields.io/badge/MariaDB-5.5--11.4-blue?style=for-the-badge&logo=MariaDB&logoColor=white)
 ![Percona](https://img.shields.io/badge/Percona-5.5--8.0-blue?style=for-the-badge)
 
 ___
@@ -44,28 +44,14 @@ The purpose of this project is to streamline and re-tag the official Docker imag
 [`mysql-5.6`][tag_mysql-5.6]
 [`mysql-5.7`][tag_mysql-5.7]
 [`mysql-8.0`][tag_mysql-8.0]
-[`mysql-8.1`][tag_mysql-8.1]
-[`mysql-8.2`][tag_mysql-8.2]
-[`mysql-8.3`][tag_mysql-8.3]
 [`mysql-8.4`][tag_mysql-8.4]
 
 [`mariadb-5.5`][tag_mariadb-5.5]
-[`mariadb-10.0`][tag_mariadb-10.0]
-[`mariadb-10.1`][tag_mariadb-10.1]
-[`mariadb-10.2`][tag_mariadb-10.2]
-[`mariadb-10.3`][tag_mariadb-10.3]
 [`mariadb-10.4`][tag_mariadb-10.4]
 [`mariadb-10.5`][tag_mariadb-10.5]
 [`mariadb-10.6`][tag_mariadb-10.6]
-[`mariadb-10.7`][tag_mariadb-10.7]
-[`mariadb-10.8`][tag_mariadb-10.8]
-[`mariadb-10.9`][tag_mariadb-10.9]
-[`mariadb-10.10`][tag_mariadb-10.10]
 [`mariadb-10.11`][tag_mariadb-10.11]
-[`mariadb-11.0`][tag_mariadb-11.0]
-[`mariadb-11.1`][tag_mariadb-11.1]
-[`mariadb-11.2`][tag_mariadb-11.2]
-[`mariadb-11.3`][tag_mariadb-11.3]
+[`mariadb-11.4`][tag_mariadb-11.4]
 
 [`percona-5.5`][tag_percona-5.5]
 [`percona-5.6`][tag_percona-5.6]
@@ -77,9 +63,6 @@ The purpose of this project is to streamline and re-tag the official Docker imag
 [tag_mysql-5.6]: https://github.com/john-ea/docker-mysql/blob/my-image/Dockerfiles/mysql-5.6
 [tag_mysql-5.7]: https://github.com/john-ea/docker-mysql/blob/my-image/Dockerfiles/mysql-5.7
 [tag_mysql-8.0]: https://github.com/john-ea/docker-mysql/blob/my-image/Dockerfiles/mysql-8.0
-[tag_mysql-8.1]: https://github.com/john-ea/docker-mysql/blob/my-image/Dockerfiles/mysql-8.1
-[tag_mysql-8.2]: https://github.com/john-ea/docker-mysql/blob/my-image/Dockerfiles/mysql-8.2
-[tag_mysql-8.3]: https://github.com/john-ea/docker-mysql/blob/my-image/Dockerfiles/mysql-8.3
 [tag_mysql-8.4]: https://github.com/john-ea/docker-mysql/blob/my-image/Dockerfiles/mysql-8.4
 
 [tag_percona-5.5]: https://github.com/john-ea/docker-mysql/blob/my-image/Dockerfiles/percona-5.5
@@ -88,22 +71,11 @@ The purpose of this project is to streamline and re-tag the official Docker imag
 [tag_percona-8.0]: https://github.com/john-ea/docker-mysql/blob/my-image/Dockerfiles/percona-8.0
 
 [tag_mariadb-5.5]: https://github.com/john-ea/docker-mysql/blob/my-image/Dockerfiles/mariadb-5.5
-[tag_mariadb-10.0]: https://github.com/john-ea/docker-mysql/blob/my-image/Dockerfiles/mariadb-10.0
-[tag_mariadb-10.1]: https://github.com/john-ea/docker-mysql/blob/my-image/Dockerfiles/mariadb-10.1
-[tag_mariadb-10.2]: https://github.com/john-ea/docker-mysql/blob/my-image/Dockerfiles/mariadb-10.2
-[tag_mariadb-10.3]: https://github.com/john-ea/docker-mysql/blob/my-image/Dockerfiles/mariadb-10.3
 [tag_mariadb-10.4]: https://github.com/john-ea/docker-mysql/blob/my-image/Dockerfiles/mariadb-10.4
 [tag_mariadb-10.5]: https://github.com/john-ea/docker-mysql/blob/my-image/Dockerfiles/mariadb-10.5
 [tag_mariadb-10.6]: https://github.com/john-ea/docker-mysql/blob/my-image/Dockerfiles/mariadb-10.6
-[tag_mariadb-10.7]: https://github.com/john-ea/docker-mysql/blob/my-image/Dockerfiles/mariadb-10.7
-[tag_mariadb-10.8]: https://github.com/john-ea/docker-mysql/blob/my-image/Dockerfiles/mariadb-10.8
-[tag_mariadb-10.9]: https://github.com/john-ea/docker-mysql/blob/my-image/Dockerfiles/mariadb-10.9
-[tag_mariadb-10.10]: https://github.com/john-ea/docker-mysql/blob/my-image/Dockerfiles/mariadb-10.10
 [tag_mariadb-10.11]: https://github.com/john-ea/docker-mysql/blob/my-image/Dockerfiles/mariadb-10.11
-[tag_mariadb-11.0]: https://github.com/john-ea/docker-mysql/blob/my-image/Dockerfiles/mariadb-11.0
-[tag_mariadb-11.1]: https://github.com/john-ea/docker-mysql/blob/my-image/Dockerfiles/mariadb-11.1
-[tag_mariadb-11.2]: https://github.com/john-ea/docker-mysql/blob/my-image/Dockerfiles/mariadb-11.2
-[tag_mariadb-11.3]: https://github.com/john-ea/docker-mysql/blob/my-image/Dockerfiles/mariadb-11.3
+[tag_mariadb-11.4]: https://github.com/john-ea/docker-mysql/blob/my-image/Dockerfiles/mariadb-11.4
 
 ```bash
 docker pull johnea/mysql:<docker-tag>
@@ -170,9 +142,6 @@ The below listed tables show how the official images have been retagged.
 | `mysql:5.6`            | `johnea/mysql:mysql-5.6` | `amd64`             |
 | `mysql:5.7`            | `johnea/mysql:mysql-5.7` | `amd64`             |
 | `mysql:8.0`            | `johnea/mysql:mysql-8.0` | `amd64`, `arm64`    |
-| `mysql:8.1`            | `johnea/mysql:mysql-8.1` | `amd64`, `arm64`    |
-| `mysql:8.2`            | `johnea/mysql:mysql-8.2` | `amd64`, `arm64`    |
-| `mysql:8.3`            | `johnea/mysql:mysql-8.3` | `amd64`, `arm64`    |
 | `mysql:8.4`            | `johnea/mysql:mysql-8.4` | `amd64`, `arm64`    |
 
 #### MariaDB
@@ -180,25 +149,14 @@ The below listed tables show how the official images have been retagged.
 * [DockerHub](https://hub.docker.com/_/mariadb)
 * [GitHub](https://github.com/docker-library/mariadb)
 
-| Original Image and Tag | New Image and Tag              | Available platforms |
-|------------------------|--------------------------------|---------------------|
+| Original Image and Tag | New Image and Tag            | Available platforms |
+|------------------------|------------------------------|---------------------|
 | `mariadb:5.5`          | `johnea/mysql:mariadb-5.5`   | `amd64`             |
-| `mariadb:10.0`         | `johnea/mysql:mariadb-10.0`  | `amd64`             |
-| `mariadb:10.1`         | `johnea/mysql:mariadb-10.1`  | `amd64`             |
-| `mariadb:10.2`         | `johnea/mysql:mariadb-10.2`  | `amd64`, `arm64`    |
-| `mariadb:10.3`         | `johnea/mysql:mariadb-10.3`  | `amd64`, `arm64`    |
 | `mariadb:10.4`         | `johnea/mysql:mariadb-10.4`  | `amd64`, `arm64`    |
 | `mariadb:10.5`         | `johnea/mysql:mariadb-10.5`  | `amd64`, `arm64`    |
 | `mariadb:10.6`         | `johnea/mysql:mariadb-10.6`  | `amd64`, `arm64`    |
-| `mariadb:10.7`         | `johnea/mysql:mariadb-10.7`  | `amd64`, `arm64`    |
-| `mariadb:10.8`         | `johnea/mysql:mariadb-10.8`  | `amd64`, `arm64`    |
-| `mariadb:10.9`         | `johnea/mysql:mariadb-10.9`  | `amd64`, `arm64`    |
-| `mariadb:10.10`        | `johnea/mysql:mariadb-10.10` | `amd64`, `arm64`    |
 | `mariadb:10.11`        | `johnea/mysql:mariadb-10.11` | `amd64`, `arm64`    |
-| `mariadb:11.0`         | `johnea/mysql:mariadb-11.0`  | `amd64`, `arm64`    |
-| `mariadb:11.1`         | `johnea/mysql:mariadb-11.1`  | `amd64`, `arm64`    |
-| `mariadb:11.2`         | `johnea/mysql:mariadb-11.2`  | `amd64`, `arm64`    |
-| `mariadb:11.3`         | `johnea/mysql:mariadb-11.3`  | `amd64`, `arm64`    |
+| `mariadb:11.4`         | `johnea/mysql:mariadb-11.4`  | `amd64`, `arm64`    |
 
 #### Percona
 

@@ -12,8 +12,8 @@ name: 🕛 Nightly
 on:
   # Runs weekly
   schedule:
-    - cron: '0 0 * * *' # every day at 00:00
-    - cron: '0 2 * * 0' # every Sunday at 02:00
+    - cron: '0 0 * * 1' # every Monday at 00:00
+    - cron: '0 2 15 * *' # at 02:00, on day 15 of the month
   # Dispatch: allows for manual trigger via GH UI
   workflow_dispatch:
 
